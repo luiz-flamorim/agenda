@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
+        integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Ignition Event Agenda Tool</title>
+</head>
+
+<body>
+    <h1>Agenda Tool</h1>
+    <div class="wrapper">
+        <div id="header-div">
+            <p id="session-name">Event name</p>
+            <p id="client-name">Client name</p>
+            <p id="session-time">The session starts at 09:00h</p>
+        </div>
+
+        <div id="button-container">
+            <span class="disabled material-icons" id="add-button">add_circle</span>
+            <div id="sub-buttons">
+                <span class="disabled material-icons" id="break-button">emoji_food_beverage</span>
+                <span class="disabled material-icons" id="upload-button">upload_file</span>
+                <input id="upload-button-hidden" hidden="hidden" title="" accept=".csv" type="file"></input>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-bg">
+        <div class="modal" id="modal">
+        </div>
+    </div>
+    <div>
+        <button class="button" id="export-button">Export as CSV</button>
+    </div>
+
+    <script src="agenda.js"></script>
+
+</body>
+
+</html>
